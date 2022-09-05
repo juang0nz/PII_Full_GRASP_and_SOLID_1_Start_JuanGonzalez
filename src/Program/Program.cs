@@ -71,3 +71,7 @@ namespace Full_GRASP_And_SOLID
         }
     }
 }
+
+
+//para agregar el metodo de calcular el total, me fije que la clase Recipe es la que cumple el principio expert debido a que tiene los datos necesarios para calcularlo. Y ademas
+//esta va a cumplir con el patron de SRP debido a que es la unica responsabilidad que toma, ya que voy a imprimir en una clase aparte. 

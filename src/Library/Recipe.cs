@@ -33,6 +33,17 @@ namespace Full_GRASP_And_SOLID.Library
                 Console.WriteLine($"{step.Quantity} de '{step.Input.Description}' " +
                     $"usando '{step.Equipment.Description}' durante {step.Time}");
             }
+            Console.WriteLine($"El total que se pide en el ejercicio es el siguiente: {this.GetProductionCost()}");
+        }
+  
+        public double GetProductionCost()
+        {
+            double total = 0;
+            foreach (Step step in this.steps)
+            {
+                total += step.getStepCost();
+            }
+            return total;
         }
     }
 }
